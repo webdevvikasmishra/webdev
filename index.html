@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vikas Mishra | .NET Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.jpg" type="image/logo">
+</head>
+<body>
+  <!-- Floating particles background -->
+  <div class="particles" id="particles"></div>
+
+  <nav>
+    <a href="#" class="logo-container">
+      <img src="images/logo.jpg" alt="Vikas Mishra Logo" class="logo-img">
+      <span class="logo-text">Vikas Mishra</span>
+    </a>
+    <ul id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <div class="theme-toggle" onclick="toggleTheme()" id="themeIcon" title="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </div>
+      </li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <h1>Vikas Mishra</h1>
+      <p>.NET Developer | Web API Specialist | Full Stack Engineer</p>
+      <a href="#contact" class="btn pulse-animation">Get In Touch</a>
+    </div>
+  </header>
+
+  <section id="about" class="hidden-section">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Vikas Mishra</strong>, a passionate and innovative <strong>.NET Developer</strong> with expertise in building scalable, high-performance applications. I combine technical skills with creative problem-solving to deliver exceptional digital experiences.</p>
+      <p>My approach focuses on clean architecture, optimized performance, and user-centric design, ensuring the solutions I build are both powerful and intuitive.</p>
+      
+      <h3>Qualification</h3>
+      
+        🎓 B.Tech in Computer Science and Engineering
+        <br>
+        📚 Polytechnic Diploma in Computer Science
+      
+      <h3>Experience</h3>
+      <p>With <strong>2+ years of professional experience</strong>, I've successfully delivered robust applications across various domains. My work emphasizes maintainability, scalability, and seamless user experiences.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="hidden-section">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3><i class="fas fa-server"></i> Backend Development</h3>
+        <ul class="skills-grid">
+          <li><i class="fab fa-microsoft"></i> ASP.NET / ASP.NET Core</li>
+          <li><i class="fas fa-code"></i> ASP.NET MVC / Core MVC</li>
+          <li><i class="fas fa-window-maximize"></i> Razor Pages / Blazor</li>
+          <li><i class="fas fa-plug"></i> RESTful API Development</li>
+          <li><i class="fas fa-layer-group"></i> Middleware & Filters</li>
+          <li><i class="fas fa-project-diagram"></i> Dependency Injection</li>
+          <li><i class="fas fa-database"></i> Entity Framework Core</li>
+          <li><i class="fas fa-shield-alt"></i> Authentication & Authorization</li>
+          <li><i class="fas fa-bolt"></i> SignalR</li>
+          <li><i class="fas fa-check-circle"></i> Unit Testing (xUnit, MSTest)</li>
+          <li><i class="fas fa-list-alt"></i> Model Binding & Validation</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+        <ul class="skills-grid">
+          <li><i class="fab fa-html5"></i> HTML5/CSS3/JavaScript</li>
+          <li><i class="fab fa-angular"></i> Angular 17+</li>
+          <li><i class="fab fa-react"></i> React.js</li>
+          <li><i class="fab fa-vuejs"></i> Vue.js</li>
+          <li><i class="fab fa-js"></i> TypeScript</li>
+          <li><i class="fab fa-bootstrap"></i> Bootstrap/Tailwind CSS</li>
+          <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+          <li><i class="fas fa-network-wired"></i> SPA Development</li>
+          <li><i class="fas fa-code-branch"></i> Fetch/Axios</li>
+          <li><i class="fas fa-edit"></i> Form Handling</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-database"></i> Database & ORM</h3>
+        <ul class="skills-grid">
+          <li><i class="fas fa-database"></i> MySQL</li>
+          <li><i class="fas fa-table"></i> Database Design</li>
+          <li><i class="fas fa-search"></i> Complex SQL Queries</li>
+          <li><i class="fas fa-code"></i> Stored Procedures</li>
+          <li><i class="fas fa-tachometer-alt"></i> Performance Optimization</li>
+          <li><i class="fas fa-database"></i> EF Core (Code First/DB First)</li>
+          <li><i class="fas fa-shield-alt"></i> Database Security</li>
+          <li><i class="fas fa-save"></i> Backup & Restore</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-cogs"></i> DevOps & Tools</h3>
+        <ul class="skills-grid">
+          <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+          <li><i class="fas fa-tasks"></i> CI/CD Pipelines</li>
+          <li><i class="fab fa-docker"></i> Docker</li>
+          <li><i class="fas fa-server"></i> IIS/Apache/Nginx</li>
+          <li><i class="fab fa-aws"></i> Cloud Services</li>
+          <li><i class="fas fa-cog"></i> Configuration Management</li>
+          <li><i class="fas fa-terminal"></i> .NET CLI</li>
+          <li><i class="fas fa-box"></i> NuGet</li>
+          <li><i class="fas fa-bug"></i> Debugging</li>
+          <li><i class="fas fa-tachometer-alt"></i> Performance Profiling</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-chess"></i> Architecture & Methodologies</h3>
+        <ul class="skills-grid">
+          <li><i class="fas fa-chess-board"></i> Clean Architecture</li>
+          <li><i class="fas fa-chess-knight"></i> Onion Architecture</li>
+          <li><i class="fas fa-shapes"></i> SOLID Principles</li>
+          <li><i class="fas fa-project-diagram"></i> Design Patterns</li>
+          <li><i class="fas fa-users"></i> Agile/Scrum</li>
+          <li><i class="fas fa-code"></i> LINQ</li>
+          <li><i class="fas fa-clipboard-list"></i> Logging & Monitoring</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="hidden-section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Time Tracker App</h3>
+        <p>A time tracking tool for employees with role-based dashboards, project hour tracking, and manager approvals.</p>
+        <p class="project-description">Helps teams manage work hours and streamline approvals.</p>
+      </div>
+      <div class="project-card">
+        <h3>Gym Management System</h3>
+        <p>Handles member registration, class schedules, and billing with automated renewals and payments.</p>
+        <p class="project-description">Simplifies gym operations and improves member services.</p>
+      </div>
+      <div class="project-card">
+        <h3>Customer Dashboard</h3>
+        <p>Provides real-time analytics, exportable reports, and CRM integration for a complete customer view.</p>
+        <p class="project-description">Gives businesses insights and better customer management tools.</p>
+      </div>
+      <div class="project-card">
+        <h3>E-Commerce API</h3>
+        <p>Backend system for online stores with product catalogs, inventory control, and Stripe/PayPal support.</p>
+        <p class="project-description">Built for fast, secure, and scalable online shopping.</p>
+      </div>
+      <div class="project-card">
+        <h3>Task Management System</h3>
+        <p>Team collaboration tool with real-time task updates, file sharing, and progress tracking.</p>
+        <p class="project-description">Makes team projects more organized and efficient.</p>
+      </div>
+      <div class="project-card">
+        <h3>Landing Zone</h3>
+        <p>A cloud foundation setup tool that establishes secure, scalable environments for enterprise cloud adoption.</p>
+        <p class="project-description">Helps organizations rapidly deploy cloud infrastructure with best practices.</p>
+      </div>
+      <div class="project-card">
+        <h3>Cloud Pilot</h3>
+        <p>Assists in assessing, planning, and executing cloud migrations with automated tools and reports.</p>
+        <p class="project-description">Built to simplify cloud transformation journeys and reduce migration risks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="hidden-section">
+    <div class="contact">
+      <h2>Let's Connect</h2>
+      <p>Interested in working together or have questions? I'd love to hear from you!</p>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:devvikasmishra@gmail.com">devvikasmishra@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/vikasbits/" target="_blank">linkedin.com/in/vikasbits</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vikas Mishra. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/vikasbits/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:devvikasmishra@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <div class="scroll-top" id="scrollTop" title="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
